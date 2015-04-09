@@ -1,0 +1,25 @@
+extends layout
+block content
+  - var user = {name: "Nouran", authorised: true }
+  .wrapper
+    .banner
+      .container-fluid
+        .row
+          .col-md-8.col-ms-8.col-xs-8.col-md-offset-2.col-ms-offset-2.col-xs-offset-2
+            .banner-caption.pal
+              h1.ws-secondary-color Crop Alert System
+              p Advance a help hand for the growers to face the pests and diseases by giving them the information about pests and diseases affecting their crops and the effects on their harvest.
+            
+              .form-group.search
+                .input-group
+                  input.form-control(type="text")
+                  span.input-group-btn
+                    button.btn.btn-default(type="button") Search
+
+            if user.authorised
+              h2 welcome #{user.name}.
+              a(href="#").btn-custom.primary Your Dashboard
+            else
+              a(href="#").btn-custom.primary.mrl Login
+              a(href="#").btn-custom.secondary.mll Register
+            

@@ -1,0 +1,166 @@
+mixin date-and-weather-widget()
+  .item.mtm.mbm
+    .clearfix.mbs
+      .tile.blue.pull-right.text-center.mls
+        .clearfix.pts
+          span.mvn.num.fslg.fwb ٢٣
+          i.fa.fa-cloud.mrm.fa-2x
+        .tile__sub.fwb.h3.mvn القاهرة , مصر
+
+      .tile.green.pull-right.text-center.mrs
+        .clearfix.pts
+          span.mvn.num.fslg.fwb ٢٠
+          i.fa.fa-calendar.fa-2x.mrm
+        .tile__sub.fwb.h3.mvn ديسمبر ٢٠١٥
+
+    //- img.img-responsive.mbs(src="images/stad-thumb.jpg", alt="")
+    //- img.img-responsive.mbs(src="images/stad-thumb.jpg", alt="")
+    img.fw.mbm(src="images/stad-thumb.jpg", alt="", width="310", height="172")
+    img.fw(src="images/sam3nkom-thumb.jpg", alt="", width="310", height="171")
+    //- img.img-responsive(src="images/stad-thumb.jpg", alt="")
+    //- img.img-responsive(src="images/sam3nkom-thumb.jpg", alt="")
+
+
+
+mixin tab-widget()
+  div.widget(role='tabpanel')
+    // Nav tabs
+    ul.nav.nav-tabs.nav-justified(role='tablist')
+      li.active(role='presentation')
+        a(href='#top-read', aria-controls='top-read', role='tab', data-toggle='tab') الاكثر قراءة
+      li(role='presentation')
+        a(href='#suggestions', aria-controls='suggestions', role='tab', data-toggle='tab') نرشح لكم
+      li(role='presentation')
+        a(href='#newest', aria-controls='newest', role='tab', data-toggle='tab') أحدث الأخبار
+    // Tab panes
+    .tab-content.widget__content
+      #top-read.tab-pane.active(role='tabpanel')
+        ul.media-list
+          - for (var i = 1; i < 5; ++i) {
+          li.media
+            .media-left
+              a(href='#')
+                img.media-object(src='images/thumb-col.png', alt='description')
+            .media-body
+              h4.media-heading
+                a(href="#") انباء عن مفاوضات بين نادي برشلونة و اللاعب المصرى محمد النني
+          unless i % 4 == 0
+            hr.mvm
+          - }
+      #suggestions.tab-pane(role='tabpanel') ...
+      #newest.tab-pane(role='tabpanel') ...
+
+mixin articles-widget(title)
+  .widget.mtm
+    .split-header.clearfix
+      h3.split-header__label.pull-right.mvn #{title}
+
+    .widget__content
+      ul.media-list
+        - for (var i = 1; i < 5; ++i) {
+        li.media
+          .media-left
+            a(href='#')
+              img.media-object.img-circle(src='images/avatar.jpg', alt='description')
+          .media-body
+            h4.media-heading
+              a(href="#") الجاهلية الشيك
+            a(href="#").grey.h6 باسم يوسف
+        unless i % 4 == 0
+          hr.mvm
+        - }
+mixin image-ad-widget(url, description)
+  img.img-responsive.mtm(src="#{url}", alt="#{description}", width="365", height="300")
+
+mixin scrollable-widget()
+  .widget.mtm
+    .split-header.clearfix
+      h3.split-header__label.pull-right.mvn تغطية حية
+
+    .widget__content
+      ul.media-list.scroll
+        - for (var i = 1; i < 7; ++i) {
+        li.media
+          //- .media-left
+          //-   a(href='#')
+          //-     img.media-object.img-circle(src='images/avatar.jpg', alt='description')
+          .media-body
+            h4.media-heading
+              a(href="#") شيماء الصباغ ومن قبلها سندس ما قيمة
+            p.grey.h6
+              | كتبه
+              a(href="#").red  عمر يوسف 
+              | منذ  2  دقائق
+        unless i % 4 == 0
+          hr.mvm
+        - }
+
+mixin square-ads-widget()
+  .widget.mtm
+    .split-header.clearfix
+      h3.split-header__label.pull-right.mvn اعلانات مبوبة
+
+    .widget__content
+      ul.media-list
+        - for (var i = 1; i < 5; ++i) {
+        li.media
+          .media-left
+            a(href='#')
+              img.media-object(src='images/thumb-col.png', alt='description')
+          .media-body
+            h4.media-heading
+              a(href="#") سيارة نقل شيفروليه نصف نقل للبيع
+          .media-right
+            a.btn-red(href='#') المزيد
+        unless i % 4 == 0
+          hr.mvm
+        - }
+mixin mail-widget()
+  .widget.red.mtm
+    h3.h1.pull-right.fwb النشرة البريدية
+    .clearfix
+    p.h4 أضف البريد الالكتروني الخاص بك ليصلك احدث الاخبار
+
+    input.wh.form-control(type="text", placeholder="Ex: mail.mmetwally@gmail.com")
+    .clearfix
+      a(href="#").btn-wh.pull-right.mtm أضف الان
+
+mixin match-time-sport-widget()
+  div.widget
+    - for (var i = 1; i < 7; ++i) {
+    div.text-center.nav.blue-bg.mtm.mbm
+      div.team.col-xs-5.col-md-5.mtm.pts الأهلي المصري
+      div.time.col-xs-2.col-md-2.pll.pts.pbs.mtm.mbm.fwb.red(style="background-color: white;") 17:00
+      div.team.col-xs-5.col-md-5.pull-left.mtm.pts حرس الحدود
+    - }
+
+mixin most-read-widget(title)
+  .widget.mtm
+    .split-header.clearfix
+      h3.split-header__label.pull-right.mvn #{title}
+
+    .widget__content
+      ul.media-list
+        - for (var i = 1; i < 5; ++i) {
+        li.media
+          .media-left
+            a(href='#')
+              img.media-object(src='images/thumb-col.png', alt='description')
+          .media-body
+            h4.media-heading
+              a(href="#") انباء عن مفاوضات بين نادي برشلونة و اللاعب المصرى محمد النني
+        unless i % 4 == 0
+          hr.mvm
+        - }
+
+mixin video-wedget()
+  .clearfix.mtl
+    i.pull-right.fa.fa-youtube-play.fa-lg
+    a(href="#").pull-right.fwb.mbs الفيديوهات الاكثر مشاهدة
+  .video-preview.no-hover
+    a.is-video-link(href="http://www.youtube.com/watch?v=lHbWRFpbma4")
+      img.img-responsive(src="images/gallery/3.jpg", alt="description", width="365", height="300")
+      //- a.is-video-link(href="http://www.youtube.com/watch?v=lHbWRFpbma4")
+      .video-preview__icon
+        i.fa.fa-play-circle.fa-4x
+      .video-preview__description.h6.mbn قصيدة هشام الجخ الممنوعة من العرض

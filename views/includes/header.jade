@@ -1,0 +1,55 @@
+doctype html
+html(lang='en',class="full")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name="description", content="")
+    meta(name="author", content="")
+    title Agreculture
+    link(rel='icon', type='image/x-icon', href='images/favicon.ico')
+    link(rel='apple-touch-icon-precomposed', sizes='57x57', href='images/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='images/apple-touch-icon-114x114.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='images/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='images/apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon-precomposed', sizes='120x120', href='images/apple-touch-icon-120x120.png')
+    link(rel='apple-touch-icon-precomposed', sizes='152x152', href='images/apple-touch-icon-152x152.png')
+    link(rel='icon', type='image/png', href='images/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='images/favicon-16x16.png', sizes='16x16')
+    meta(name='application-name', content='Welad El Balad')
+    meta(name='msapplication-TileColor', content='#FFFFFF')
+    meta(name='msapplication-TileImage', content='images/mstile-144x144.png')
+
+    // Bootstrap
+    //- link(href='css/bootstrap.css', rel='stylesheet', media="screen")
+    //- link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css')
+    //- link(href="css/bootswatch.min.css", rel="stylesheet")
+    // Font-awesome
+    //- link(rel='stylesheet', href='css/font-awesome.min.css')
+    //- link(href='css/magnific-popup.css', rel='stylesheet', type='text/css')
+    // CSS Files
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+
+  body
+    div
+      include sidebar-mixins
+      include mixins
+      header
+        .container
+          .row
+            .col-lg-2.col-md-2.col-sm-12.col-xs-12
+              a(href="index.html")
+                span Galileo
+
+            //- nav.col-lg-10.col-md-10.col-sm-12.col-xs-12
+            //-   .nav-wrapper
+            //-     img.arrow(src="images/arrow.png", alt="")
+            //-     ul.main.nav.nav-pills
+            //-       li
+            //-         a(href="#") Home
+            //-       li
+            //-         a(href="#") Questions
+            //-       li
+            //-         a(href="#") Dashboard
+            //-       li
+            //-         a(href="#") profile

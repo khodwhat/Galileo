@@ -1,0 +1,209 @@
+//@import url('http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css');     //../fonts/DroidNaskh-Regular.ttf
+
+/*========= imports ==========*/
+// Set imported file paths to their actual location in your environment
+@import "../../node_modules/bootstrap/less/bootstrap"; // <- Bootstrap  bootstrap.less 
+
+@import "variables";          // <- Bootswatch variables.less
+@import "bootswatch";         // <- Bootswatch bootswatch.less 
+@import "bootstrap-select";  
+@import "datepicker";
+
+/* ============ typography ============*/
+body, input {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+body {-webkit-font-smoothing: antialiased;}
+// h1, .h1 {font-size: 18px;}
+// h2, .h2 {font-size: 16px;}
+// h3, .h3 {font-size: 15px;}
+// h4, .h4 {font-size: 14px;}
+// h5, .h5 {font-size: 13px}
+// h6, .h6 {font-size: 12px;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h6 {
+  font-weight: 700;
+}
+.fslg {font-size: 30px;}
+.fsm {font-size: 23px;}
+h1, h2, h3, h4, h5, h6, p.h6 {line-height: 1.75;}
+body, a {color: white;}
+p.h6 {font-weight: normal;}
+textarea {
+  resize: none;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* ============ helper classes ============*/
+
+// .grey {color: #868686;}
+// .muted {color: #a3a3a3;}
+// .bg-grey {background: #f1f1f1;}
+.ws-primary-color {color: @website-primary;}
+.ws-secondary-color {color: @website-secondary;}
+.ws-yellow-color {color: @website-yellow;}
+.ws-blue-color {color: @website-blue;}
+.ws-primary-bg {background-color: @website-primary;}
+.ws-secondary-bg {background-color: @website-secondary;}
+.ws-yellow-bg {background-color: @website-yellow;}
+.ws-blue-bg {background-color: @website-blue;}
+
+.fwb {font-weight: bold;}
+.fwn {font-weight: normal;}
+.circle-bd {
+  border: 1px solid ; //#e44d53
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  display: block;
+}
+
+
+
+////// spacing ////////
+/* spacing helpers
+p,m = padding,margin
+a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
+*/
+
+
+.ptn,.pvn,.pan{padding-top: 0 !important}
+.pts,.pvs,.pas{padding-top: 5px !important}
+.ptm,.pvm,.pam{padding-top: 10px !important}
+.ptl,.pvl,.pal{padding-top: 20px !important}
+.prn,.phn,.pan{padding-right: 0 !important}
+.prs,.phs,.pas{padding-right: 5px !important}
+.prm,.phm,.pam{padding-right: 10px !important}
+.prl,.phl,.pal{padding-right: 20px !important}
+.pbn,.pvn,.pan{padding-bottom: 0 !important}
+.pbs,.pvs,.pas{padding-bottom:5px !important}
+.pbm,.pvm,.pam{padding-bottom:10px !important}
+.pbl,.pvl,.pal{padding-bottom:20px !important}
+.pln,.phn,.pan{padding-left: 0px !important}
+.pls,.phs,.pas{padding-left: 5px !important}
+.plm,.phm,.pam{padding-left: 10px !important}
+.pll,.phl,.pal{padding-left: 20px !important}
+.mtn,.mvn,.man{margin-top:0px !important}
+.mts,.mvs,.mas{margin-top:5px !important}
+.mtm,.mvm,.mam{margin-top:10px !important}
+.mtl,.mvl,.mal{margin-top:20px !important}
+.mrn,.mhn,.man{margin-right: 0px !important}
+.mrs,.mhs,.mas{margin-right: 5px !important}
+.mrm,.mhm,.mam{margin-right: 10px !important}
+.mrl,.mhl,.mal{margin-right: 20px !important}
+.mbn,.mvn,.man{margin-bottom:0px !important}
+.mbs,.mvs,.mas{margin-bottom:5px !important}
+.mbm,.mvm,.mam{margin-bottom:10px !important}
+.mbl,.mvl,.mal{margin-bottom:20px !important}
+.mln,.mhn,.man{margin-left: 0px !important}
+.mls,.mhs,.mas{margin-left: 5px !important}
+.mlm,.mhm,.mam{margin-left: 10px !important}
+.mll,.mhl,.mal{margin-left: 20px !important}
+.mra,.mha{margin-right:auto !important}
+.mla,.mha{margin-left:auto !important}
+.fr{float: right !important}
+.fl{float: left !important}
+
+/* ============ index ============*/
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+  text-align: center;
+}
+.full{  // Wheat-Close-Up-2-flower-wallpapers-1920x1200.jpg
+  background: url('../images/Wheat-Farm-flower-wallpapers-1920x1200.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+// .overlay{
+//   background-color: rgba(36, 36, 36, 0.8);
+// } 
+// .banner {
+//   .banner-caption {
+//     p {
+//       font-size: large;
+//       font-weight: 400;
+//     }
+//   }
+// }
+p {
+    font-size: large;
+    font-weight: 400;
+  }
+.btn-custom{
+  min-height: 60px;
+  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  padding: 15px 40px 15px 40px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin: 25px 5px 5px 0px;
+  &.primary{
+    .ws-primary-bg;
+    border: 5px solid @website-primary;
+    color: #fff;
+    &:hover{
+      background-color: transparent;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  &.secondary{
+    .ws-secondary-bg;
+    border: 5px solid @website-secondary;
+    color: #fff;
+    &:hover{
+      background-color: transparent;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+.form-group{
+  &.search{
+    margin-bottom: 80px;
+    margin-top: 50px;
+
+  }
+}
+.sec__content{
+  background-color: rgba(36, 36, 36, 0.8);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}

@@ -1,0 +1,21 @@
+include includes/mixins
+extends layout
+
+block content
+  .wrapper
+    .container
+      .row
+        .col-lg-8.col-md-8.col-sm-12.col-xs-12
+          p.mvl
+            span.h6.token.list-inline.fwb البحث علي
+            h3.fsm.fwb زيادة الصادرات من المواد البترولية
+
+          +searchResults("stadium", "اخبار بلادنا", "1", "red", "globe", 6)
+
+
+
+
+        //- .col-lg-4.col-md-4.col-sm-12.col-xs-12.mtm
+        //-   +tab-widget()
+        //-   +articles-widget("نرشح لكم")
+        //-   +image-ad-widget("images/leo.jpg", "description")
