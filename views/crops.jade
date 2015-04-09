@@ -1,0 +1,39 @@
+include includes/mixins
+extends layout
+
+block content
+  .wrapper
+    .container
+      .row
+        .col-md-8.col-ms-8.col-xs-8.col-md-offset-2.col-ms-offset-2.col-xs-offset-2
+          div.sec.mvm
+            div.sec__content.pam
+              div.row
+                div.col-lg-12.col-md-12.col-xs-12.col-ms-12.mrl
+                  h1.ws-secondary-color Enter your crops
+                  p This system aims to help you protect your crops from the pests and diseases.
+                div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                  form.pll(role="form")
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      input.form-control.mbl#crop-start-date(type="text", placeholder="Crop creation date")
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      select(data-title="Select crop" data-size="5").select-crop.form-control.mbl
+                        option(value="pest1") pest1
+                        option(value="pest2") pest2
+                        option(value="pest3") pest3
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      input.form-control.mbl(type="text"  placeholder="Your parcel ID")
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      select(data-title="Select Irrigation method" data-size="5").select-crop.form-control.mbl
+                        option(value="pest1") pest1
+                        option(value="pest2") pest2
+                        option(value="pest3") pest3
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      select(data-title="Select field soil" data-size="5").select-crop.form-control.mbl
+                        option(value="pest1") pest1
+                        option(value="pest2") pest2
+                        option(value="pest3") pest3
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      input.form-control.mbl(type="text"  placeholder="Field Area")
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      button.btn.btn-custom.secondary(type="submit") Register

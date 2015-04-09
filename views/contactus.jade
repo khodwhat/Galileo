@@ -1,0 +1,27 @@
+include includes/mixins
+extends layout
+
+block content
+  .wrapper
+    .container
+      .row
+        .col-md-8.col-ms-8.col-xs-8.col-md-offset-2.col-ms-offset-2.col-xs-offset-2
+          div.sec.mvm
+            div.sec__content.pam
+              div.row
+                div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                  h1.ws-secondary-color Contact us
+                  p We aim to help the farmer protect his crops from the pests and diseases.
+                div.col-lg-12.col-md-12.col-xs-12.col-ms-12.pln
+                  form.pll(role="form")
+                    div.col-lg-6.col-md-6.col-xs-12.col-ms-12
+                      input.form-control.mbl(type="text"  placeholder="Your Name")
+                    div.col-lg-6.col-md-6.col-xs-12.col-ms-12
+                      input.form-control.mbl(type="text"  placeholder="Your Email")
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      textarea.form-control(rows="5" placeholder="Write your message here ...")
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      button.btn.btn-custom.secondary(type="submit") Send
+                
+
+

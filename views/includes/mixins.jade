@@ -1,0 +1,131 @@
+mixin sectionList(name, title, number, color, icon, repeats)
+  .sec.mvm(class="sec-#{number}")
+    .featured-sep.grey.clearfix(class="#{color} #{name}")
+      .featured-sep__label.pull-right
+        i.mlm.fa(class="fa-#{icon}")
+        span #{title}
+    .sec__content.pam
+      - for (var i = 0; i < repeats; ++i) {
+      .media
+        .media-left.hidden-xs.hidden-sm
+          a(href='#')
+            img.media-object(src='images/article-thumb.jpg', alt='description')
+        .media-body
+          h4.fwb.media-heading
+            a(href="#") زيادة الصادرات من المواد البترولية
+          p.h6 نفس مهاجمة وقدّموا عل, كما ان وإقامة الرئيسية, شمال المحيط العسكرية كلّ أن. أضف مع وترك الغربي الإيطالية, مليون الصفحة وباستثناء لكل بل. الحرب الأسيوي الألمانية، ذات إذ, جوي تم ويعزى الوراء استبدال تم لعدم خسائر فقد. وانتهاءً والإتحاد و بال, تم لان فرنسا تشيرشل ويكيبيديا, بين عن لدحر بمباركة والحلفاء.
+      - }
+      hr
+      nav.clearfix
+        ul.pagination.mvn.round.pull-left
+          li.active
+            a(href='#') 1
+          li
+            a(href='#') 2
+          li
+            a(href='#') 3
+          li
+            a(href='#') 4
+          li
+            a(href='#') 5
+          li
+            a(href='#') 6
+
+mixin searchResults(name, title, number, color, icon, repeats)
+  .sec.mvm(class="sec-#{number}")
+    .sec__content.pam
+      - for (var i = 0; i < repeats; ++i) {
+      .media
+        .media-left.hidden-xs.hidden-sm
+          a(href='#')
+            img.media-object(src='images/article-thumb.jpg', alt='description')
+        .media-body
+          h4.fwb.media-heading
+            a(href="#") زيادة الصادرات من المواد البترولية
+          p.h6 نفس مهاجمة وقدّموا عل, كما ان وإقامة الرئيسية, شمال المحيط العسكرية كلّ أن. أضف مع وترك الغربي الإيطالية, مليون الصفحة وباستثناء لكل بل. الحرب الأسيوي الألمانية، ذات إذ, جوي تم ويعزى الوراء استبدال تم لعدم خسائر فقد. وانتهاءً والإتحاد و بال, تم لان فرنسا تشيرشل ويكيبيديا, بين عن لدحر بمباركة والحلفاء.
+      - }
+      hr
+      nav.clearfix
+        ul.pagination.mvn.round.pull-left
+          li.active
+            a(href='#') 1
+          li
+            a(href='#') 2
+          li
+            a(href='#') 3
+          li
+            a(href='#') 4
+          li
+            a(href='#') 5
+          li
+            a(href='#') 6
+
+mixin section(name, title, number, color, icon)
+  .sec.mvm(class="sec-#{number}")
+    .featured-sep.grey.clearfix(class="#{color} #{name}")
+      .featured-sep__label.pull-right
+        i.mlm.fa(class="fa-#{icon}")
+        span #{title}
+    .sec__content.pam
+      .media
+        .media-left
+          a(href='#')
+            img.media-object.hidden-sm.hidden-xs(src='images/sec-lg.jpg', alt='description')
+        .media-body
+          h3.media-heading
+            a(href="#") زيادة الصادرات من المواد البترولية
+          |نفس مهاجمة وقدّموا عل, كما ان وإقامة الرئيسية, شمال المحيط العسكرية كلّ أن. أضف مع وترك الغربي الإيطالية, مليون الصفحة وباستثناء لكل بل. الحرب الأسيوي الألمانية، ذات إذ, جوي تم ويعزى الوراء استبدال تم لعدم خسائر فقد. وانتهاءً والإتحاد و بال, تم لان فرنسا تشيرشل ويكيبيديا, بين عن لدحر بمباركة والحلفاء.
+      hr.mvm
+      .row
+        .col-lg-6
+          .media
+            .media-left
+              a(href='#')
+                img.media-object(src='images/sec-sm.jpg', alt='description')
+            .media-body
+              h4.media-heading
+                a(href="#") زيادة الصادرات من المواد البترولية
+              |نفس مهاجمة وقدّموا عل, كما ان وإقامة الرئيسية, شمال المحيط العسكرية
+        .col-lg-6
+          .media
+            .media-left
+              a(href='#')
+                img.media-object(src='images/sec-sm.jpg', alt='description')
+            .media-body
+              h4.media-heading
+                a(href="#") زيادة الصادرات من المواد البترولية
+              |نفس مهاجمة وقدّموا عل, كما ان وإقامة الرئيسية, شمال المحيط العسكرية
+    .featured-sep.wh.clearfix(class="#{color} #{name}")
+      a(href="#").featured-sep__label.bdl.sm.pull-left إقرأ المزيد
+
+mixin half-section(name, title, number, color, icon)
+  .sec.mvm(class="sec-#{number}")
+    .featured-sep.grey.clearfix(class="#{color} #{name}")
+      .featured-sep__label.pull-right
+        i.mlm.fa(class="fa-#{icon}")
+        span #{title}
+    .sec__content.pam
+      ul.media-list
+        - for (var i = 0; i < 4; ++i) {
+        li.media
+          .media-left
+            a(href='#')
+              img.media-object(src='images/apache-thumb-2.jpg', alt='description')
+          .media-body
+            h4.media-heading
+              a(href="#") طائرات اباتشي صناعة مصرية في اطار تطوير الجيش المصرى
+        - }
+    .featured-sep.wh.clearfix(class="#{color} #{name}")
+      a(href="#").featured-sep__label.bdl.sm.pull-left إقرأ المزيد
+
+mixin block-section(img, title)
+  a(href="#").block
+    img(src="images/#{img}", alt="")
+    h3.title.mvl.fwb.h6 #{title}
+
+mixin modal(id, img_url)
+  div.modal.fade(id="#{id}", tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+    .modal-dialog 
+      .modal-content
+        .modal-body
+          img.img-responsive(src="#{img_url}")

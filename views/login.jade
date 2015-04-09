@@ -1,0 +1,25 @@
+include includes/mixins
+extends layout
+
+block content
+  .wrapper
+    .container
+      .row
+        .col-md-8.col-ms-8.col-xs-8.col-md-offset-2.col-ms-offset-2.col-xs-offset-2
+          div.sec.mvm
+            div.sec__content.pam
+              div.row
+                div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                  h1.ws-secondary-color Login
+                  p Welcome back.
+                div.col-lg-12.col-md-12.col-xs-12.col-ms-12.pln
+                  form.pll(role="form")
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      input.form-control.mbl(type="email"  placeholder="example@domain.com")
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      input.form-control.mbl(type="password"  placeholder="Enter your password")
+                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                      button.btn.btn-custom.secondary(type="submit") Login
+                
+
+
