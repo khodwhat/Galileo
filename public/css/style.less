@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333333;
+  color: white;
 }
 h1 {
   font-size: 38px;
@@ -134,7 +134,8 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .mla,.mha{margin-left:auto !important}
 .fr{float: right !important}
 .fl{float: left !important}
-
+.ar{text-align: right;}
+.al{text-align: left;}
 /* ============ index ============*/
 body {
   margin-top: 50px;
@@ -165,7 +166,7 @@ p {
     font-weight: 400;
   }
 .btn-custom{
-  min-height: 60px;
+  //min-height: 60px;
   border-radius: 30px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -181,7 +182,7 @@ p {
     color: #fff;
     &:hover{
       background-color: transparent;
-      color: #000;
+      color: @website-primary;
       text-decoration: none;
     }
   }
@@ -191,11 +192,12 @@ p {
     color: #fff;
     &:hover{
       background-color: transparent;
-      color: #000;
+      color: @website-secondary;
       text-decoration: none;
     }
   }
 }
+
 .form-group{
   &.search{
     margin-bottom: 80px;
@@ -207,4 +209,19 @@ p {
   background-color: rgba(36, 36, 36, 0.8);
   border-radius: 10px;
   -webkit-border-radius: 10px;
+}
+
+//Map Style
+html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+
+.spliter::before {
+  content: open-quote;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+  
+.spliter::after {
+  content: close-quote;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

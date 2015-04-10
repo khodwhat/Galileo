@@ -12,28 +12,55 @@ block content
                 div.col-lg-12.col-md-12.col-xs-12.col-ms-12.mrl
                   h1.ws-secondary-color Enter your crops
                   p This system aims to help you protect your crops from the pests and diseases.
-                div.col-lg-12.col-md-12.col-xs-12.col-ms-12
-                  form.pll(role="form")
+                div.col-lg-12.col-md-12.col-xs-12.col-ms-12.pln
+                  form#cropForm.pll(role="form")
+                    .cropsForm
+                      div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                        label.control-label.fl(for="inputCropStartDate") Crop start date:
+                        input.form-control.mbl#inputCropStartDate(type="text", placeholder="Crop creation date")
+                      div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                        label.control-label.fl(for="inputCropName") Select crop name:
+                        select(data-size="5")#inputCropName.select-crop.form-control.mbl
+                          option(value="pest1") pest1
+                          option(value="pest2") pest2
+                          option(value="pest3") pest3
+                      div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                        label.control-label.fl(for="inputParcelID") Parcel ID:
+                        input.form-control.mbl#inputParcelID(type="text")
+                      div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                        label.control-label.fl(for="inputIrrigation") Type of irrigation:
+                        select(data-size="5")#inputIrrigation.select-crop.form-control.mbl
+                          option(value="pest1") pest1
+                          option(value="pest2") pest2
+                          option(value="pest3") pest3
+                      div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                        label.control-label.fl(for="inputSoil") Type of soil:
+                        select(data-size="5")#inputSoil.select-crop.form-control.mbl
+                          option(value="pest1") pest1
+                          option(value="pest2") pest2
+                          option(value="pest3") pest3
+                      div.col-lg-12.col-md-12.col-xs-12.col-ms-12
+                        label.control-label.fl(for="inputArea") Farmland area:
+                        input.form-control.mbl#inputArea(type="text")
+                      div.col-lg-12.col-md-12.col-xs-12.col-ms-12.mbl
+                        label.control-label.fl(for="searchLocation") Select your land position:
+                        input.form-control.mbl#searchLocation(type="text")
+                        div#map-canvas(style="height:300px")
+
                     div.col-lg-12.col-md-12.col-xs-12.col-ms-12
-                      input.form-control.mbl#crop-start-date(type="text", placeholder="Crop creation date")
+                      a.btn.btn-custom.primary.fl.pls.prs.pts.pbs.addNewCrop(href="#") Add new crop
+                    
                     div.col-lg-12.col-md-12.col-xs-12.col-ms-12
-                      select(data-title="Select crop" data-size="5").select-crop.form-control.mbl
+                      h6.al.spliter Interested about other crops? select them and you will get their news
+                      select(data-size="5" multiple)#inputCropName.select-crop.form-control.mbl
                         option(value="pest1") pest1
                         option(value="pest2") pest2
                         option(value="pest3") pest3
                     div.col-lg-12.col-md-12.col-xs-12.col-ms-12
-                      input.form-control.mbl(type="text"  placeholder="Your parcel ID")
+                      label.checkbox-inline.fl(for="smsCheckbox") 
+                        input#smsCheckbox(type='checkbox') 
+                        |Send via SMS
+                      
                     div.col-lg-12.col-md-12.col-xs-12.col-ms-12
-                      select(data-title="Select Irrigation method" data-size="5").select-crop.form-control.mbl
-                        option(value="pest1") pest1
-                        option(value="pest2") pest2
-                        option(value="pest3") pest3
-                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
-                      select(data-title="Select field soil" data-size="5").select-crop.form-control.mbl
-                        option(value="pest1") pest1
-                        option(value="pest2") pest2
-                        option(value="pest3") pest3
-                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
-                      input.form-control.mbl(type="text"  placeholder="Field Area")
-                    div.col-lg-12.col-md-12.col-xs-12.col-ms-12
-                      button.btn.btn-custom.secondary(type="submit") Register
+                      button.btn.btn-custom.secondary(type="submit") submit
+

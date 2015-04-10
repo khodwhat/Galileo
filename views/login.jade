@@ -15,9 +15,13 @@ block content
                 div.col-lg-12.col-md-12.col-xs-12.col-ms-12.pln
                   form.pll(role="form")
                     div.col-lg-12.col-md-12.col-xs-12.col-ms-12
-                      input.form-control.mbl(type="email"  placeholder="example@domain.com")
+                      label.control-label.fl(for="inputEmail") Email:
+                      input.form-control.mbl#inputEmail(type="email"  placeholder="example@domain.com")
+                    
                     div.col-lg-12.col-md-12.col-xs-12.col-ms-12
-                      input.form-control.mbl(type="password"  placeholder="Enter your password")
+                      label.control-label.fl(for="inputPassword") Password:
+                      input.form-control.mbl#inputPassword(type="password")
+                    
                     div.col-lg-12.col-md-12.col-xs-12.col-ms-12
                       button.btn.btn-custom.secondary(type="submit") Login
                 

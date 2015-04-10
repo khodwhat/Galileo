@@ -15,13 +15,14 @@ block content
                 div.col-lg-12.col-md-12.col-xs-12.col-ms-12.pln
                   form.pll(role="form")
                     div.col-lg-6.col-md-6.col-xs-12.col-ms-12
-                      input.form-control.mbl(type="text"  placeholder="Your Name")
+                      label.control-label.fl(for="inputUserName") Name:
+                      input.form-control.mbl#inputUserName(type="text")
                     div.col-lg-6.col-md-6.col-xs-12.col-ms-12
-                      input.form-control.mbl(type="text"  placeholder="Your Email")
+                      label.control-label.fl(for="inputEmail") Email:
+                      input.form-control.mbl#inputEmail(type="text")
                     div.col-lg-12.col-md-12.col-xs-12.col-ms-12
-                      textarea.form-control(rows="5" placeholder="Write your message here ...")
+                      label.control-label.fl(for="inputUserMessage") Write your message:
+                      textarea.form-control#inputUserMessage(rows="5")
                     div.col-lg-12.col-md-12.col-xs-12.col-ms-12
                       button.btn.btn-custom.secondary(type="submit") Send
                 
-
-
